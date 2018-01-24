@@ -1,0 +1,6 @@
+<resources>
+    <plurals name="test">
+        <item quantity="one">jmc \> %1$d</item>
+        <item quantity="other">jmc \> %1$d</item>
+    </plurals>
+</resources>

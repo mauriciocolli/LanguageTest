@@ -1,0 +1,5 @@
+<resources>
+    <plurals name="test">
+        <item quantity="other">kea \> %1$d</item>
+    </plurals>
+</resources>

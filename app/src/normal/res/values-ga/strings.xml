@@ -1,0 +1,9 @@
+<resources>
+    <plurals name="test">
+        <item quantity="one">ga \> %1$d</item>
+        <item quantity="two">ga \> %1$d</item>
+        <item quantity="few">ga \> %1$d</item>
+        <item quantity="many">ga \> %1$d</item>
+        <item quantity="other">ga \> %1$d</item>
+    </plurals>
+</resources>

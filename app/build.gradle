@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.lang.test"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        normal {
+            res.srcDirs = ['/src/normal/res']
+        }
+        withoutOther {
+            res.srcDirs = ['/src/withoutOther/res']
+        }
+    }
+    buildTypes {
+        normal {
+            debuggable true
+            applicationIdSuffix ".normal"
+            signingConfig signingConfigs.debug
+        }
+        withoutOther {
+            debuggable true
+            applicationIdSuffix ".wother"
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+}

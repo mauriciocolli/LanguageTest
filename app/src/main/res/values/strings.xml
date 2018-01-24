@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LanguageTest</string>
+    <plurals name="test">
+        <item quantity="one">default strings \> %1$d</item>
+        <item quantity="other">default strings \> %1$d</item>
+    </plurals>
+</resources>
